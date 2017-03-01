@@ -4,5 +4,7 @@
 <dict>
 	<key>AuthTenantID</key>
 	<string>cc4e0554-6582-498b-9ae2-ad3c612f8e8e</string>
+	<key>AuthURL</key>
+	<string>http://103.245.204.114:8081/authentication/api/v1/login_session</string>
 </dict>
 </plist>

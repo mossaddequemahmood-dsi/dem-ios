@@ -2,12 +2,12 @@
 //  ViewController.swift
 //  dem
 //
-//  Created by sazzad on 2/16/17.
+//  Created by Mossaddeque Mahmood on 2/16/17.
 //  Copyright © 2017 Dynamic Solution Innovators. All rights reserved.
 //
 
 import UIKit
-import Alamofire
+
 import AVFoundation
 import Foundation
 
@@ -18,8 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblMsg: UILabel!
     @IBOutlet weak var btnLogin: UIButton!
     
+    @IBOutlet weak var callInSickDayBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtUsername.text = "sean.king@example.com";
+        txtPassword.text = "1234";
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -31,36 +35,44 @@ class ViewController: UIViewController {
 
     @IBAction func login(_ sender: UIButton) {
         
-        txtUsername.text = "sean.king@example.com";
-        txtPassword.text = "1234";
-        
-        let path : String = Bundle.main.path(forResource: "app", ofType: "plist")!;
-        let dict = NSDictionary(contentsOfFile: path);
-        
-        if let tetant : String = dict!.object(forKey: "AuthTenantID") as? String {
-            print(tetant);
-            lblMsg.text = tetant;
-        }
-        
-
-        
         if(txtUsername.text == "" || txtPassword.text == ""){
             lblMsg.text = "Username and Password can not be empty";
         }
-        //print(txtUsername);
-        //print(txtPassword);
         
-        /*Alamofire.request("https://httpbin.org/get").responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
-            
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-            }
-        }*/
+        let userSessionService : UserSessionService = UserSessionService();
+
+        userSessionService.login(username: txtUsername.text!, password: txtPassword.text!) {
+                [weak self]status in
+                
+                self?.lblMsg.text = status.getStatusMessage();
+                if(status.getStatus() == true){
+                    self?.performSegue(withIdentifier: "showDashboard", sender: self);
+                }
+        }
     }
 
+    
+    @IBAction func callInSickDay(_ sender: UIButton) {
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
