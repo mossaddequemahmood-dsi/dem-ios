@@ -11,20 +11,22 @@ import UIKit
 import AVFoundation
 import Foundation
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var lblMsg: UILabel!
     @IBOutlet weak var btnLogin: UIButton!
     
-    @IBOutlet weak var callInSickDayBtn: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtUsername.text = "sean.king@example.com";
-        txtPassword.text = "1234";
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        txtUsername?.text = "sean.king@example.com";
+        txtPassword?.text = "1234";
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,14 +48,13 @@ class ViewController: UIViewController {
                 
                 self?.lblMsg.text = status.getStatusMessage();
                 if(status.getStatus() == true){
-                    self?.performSegue(withIdentifier: "showDashboard", sender: self);
+                    self?.performSegue(withIdentifier: "segueShowDashboard", sender: self);
                 }
         }
     }
 
     
-    @IBAction func callInSickDay(_ sender: UIButton) {
-    }
+
 }
 
 

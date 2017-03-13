@@ -36,8 +36,6 @@ class LeaveService {
                     } else {
                         self.resetPreferences();
                     }
-                    
-    
                 }
         }
         
@@ -48,23 +46,11 @@ class LeaveService {
     }
     
     private func resetPreferences(){
-        Config.setPreference(key: "access_token", value: "");
-        Config.setPreference(key: "first_name", value: "");
-        Config.setPreference(key: "last_name", value: "");
-        Config.setPreference(key: "login_id", value: "");
-        Config.setPreference(key: "tenant_name", value: "");
-        Config.setPreference(key: "user_id", value: "");
-        Config.setPreference(key: "username", value: "");
+        Config.setPreference(key: "leave_type_id", value: "");
     }
     
     private func setPreferences(respJson: NSDictionary){
-        Config.setPreference(key: "access_token", value: respJson["access_token"] as! String);
-        Config.setPreference(key: "first_name", value: respJson["first_name"] as! String);
-        Config.setPreference(key: "last_name", value: respJson["last_name"] as! String);
-        Config.setPreference(key: "login_id", value: respJson["login_id"] as! String);
-        Config.setPreference(key: "tenant_name", value: respJson["tenant_name"] as! String);
-        Config.setPreference(key: "user_id", value: respJson["user_id"] as! String);
-        Config.setPreference(key: "username", value: respJson["username"] as! String);
+        Config.setPreference(key: "leave_type_id", value: respJson["access_token"] as! String);
     }
 }
 

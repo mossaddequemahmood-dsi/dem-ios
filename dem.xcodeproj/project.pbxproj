@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4937D87C1E72B11D0045700F /* LeaveRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937D87B1E72B11D0045700F /* LeaveRequestViewController.swift */; };
+		4937D87E1E72B2280045700F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937D87D1E72B2280045700F /* DashboardViewController.swift */; };
 		49855C011E5D7B9B00855109 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49855C001E5D7B9B00855109 /* Config.swift */; };
 		49855C031E5D7EFB00855109 /* UserSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49855C021E5D7EFB00855109 /* UserSessionService.swift */; };
 		49855C051E5D801200855109 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49855C041E5D801200855109 /* Logger.swift */; };
 		498F497E1E659D7B00C42069 /* LeaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F497D1E659D7B00C42069 /* LeaveService.swift */; };
 		CAC34E75702189C3DA6FF8B0 /* Pods_dem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158D21F5DE65BB5C723B37B0 /* Pods_dem.framework */; };
 		FCA053981E5589A9004166C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA053971E5589A9004166C7 /* AppDelegate.swift */; };
-		FCA0539A1E5589A9004166C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA053991E5589A9004166C7 /* ViewController.swift */; };
+		FCA0539A1E5589A9004166C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA053991E5589A9004166C7 /* LoginViewController.swift */; };
 		FCA0539D1E5589A9004166C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA0539B1E5589A9004166C7 /* Main.storyboard */; };
 		FCA0539F1E5589A9004166C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA0539E1E5589A9004166C7 /* Assets.xcassets */; };
 		FCA053A21E5589AA004166C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA053A01E5589AA004166C7 /* LaunchScreen.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		158D21F5DE65BB5C723B37B0 /* Pods_dem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4937D87B1E72B11D0045700F /* LeaveRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveRequestViewController.swift; sourceTree = "<group>"; };
+		4937D87D1E72B2280045700F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		49855C001E5D7B9B00855109 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		49855C021E5D7EFB00855109 /* UserSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionService.swift; sourceTree = "<group>"; };
 		49855C041E5D801200855109 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -30,7 +34,7 @@
 		B2A6C45A722CA73F884C8895 /* Pods-dem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dem.release.xcconfig"; path = "Pods/Target Support Files/Pods-dem/Pods-dem.release.xcconfig"; sourceTree = "<group>"; };
 		FCA053941E5589A9004166C7 /* dem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA053971E5589A9004166C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCA053991E5589A9004166C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCA053991E5589A9004166C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FCA0539C1E5589A9004166C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA0539E1E5589A9004166C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA053A11E5589AA004166C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA053971E5589A9004166C7 /* AppDelegate.swift */,
-				FCA053991E5589A9004166C7 /* ViewController.swift */,
+				FCA053991E5589A9004166C7 /* LoginViewController.swift */,
 				FCA0539B1E5589A9004166C7 /* Main.storyboard */,
 				FCA0539E1E5589A9004166C7 /* Assets.xcassets */,
 				FCA053A01E5589AA004166C7 /* LaunchScreen.storyboard */,
@@ -99,6 +103,8 @@
 				49855C021E5D7EFB00855109 /* UserSessionService.swift */,
 				49855C041E5D801200855109 /* Logger.swift */,
 				498F497D1E659D7B00C42069 /* LeaveService.swift */,
+				4937D87B1E72B11D0045700F /* LeaveRequestViewController.swift */,
+				4937D87D1E72B2280045700F /* DashboardViewController.swift */,
 			);
 			path = dem;
 			sourceTree = "<group>";
@@ -188,7 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		32E17CEBB761399819356CA6 /* [CP] Embed Pods Frameworks */ = {
@@ -230,10 +236,12 @@
 			files = (
 				49855C051E5D801200855109 /* Logger.swift in Sources */,
 				498F497E1E659D7B00C42069 /* LeaveService.swift in Sources */,
-				FCA0539A1E5589A9004166C7 /* ViewController.swift in Sources */,
+				4937D87C1E72B11D0045700F /* LeaveRequestViewController.swift in Sources */,
+				FCA0539A1E5589A9004166C7 /* LoginViewController.swift in Sources */,
 				FCA053981E5589A9004166C7 /* AppDelegate.swift in Sources */,
 				49855C011E5D7B9B00855109 /* Config.swift in Sources */,
 				49855C031E5D7EFB00855109 /* UserSessionService.swift in Sources */,
+				4937D87E1E72B2280045700F /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

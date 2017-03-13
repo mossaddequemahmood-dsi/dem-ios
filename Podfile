@@ -7,4 +7,5 @@ target 'dem' do
 
   # Pods for dem
     pod 'Alamofire', '~> 4.3'
+    pod 'DropDown', '~> 2'
 end
