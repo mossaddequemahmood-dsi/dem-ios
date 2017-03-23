@@ -4,7 +4,19 @@
 <dict>
 	<key>AuthTenantID</key>
 	<string>cc4e0554-6582-498b-9ae2-ad3c612f8e8e</string>
+	<key>CasualLeaveTypeID</key>
+	<string>553fb999-2ceb-4bf0-90f2-ccf52742c8a1</string>
+	<key>SickLeaveTypeID</key>
+	<string>7e1c5ac7-f7a6-43e0-b5da-31cf8b899f10</string>
+	<key>PreLeaveRequestTypeID</key>
+	<string>0b9cb019-74de-4e3a-90e0-ebca64c6df95</string>
+	<key>LeaveRequestURL</key>
+	<string>/dem/api/v1/my_leave_requests</string>
+	<key>BaseURL</key>
+	<string>http://103.245.204.114:8081</string>
+	<key>PostLeaveRequestTypeID</key>
+	<string>1d905432-0ba2-4681-bfcb-e91d313afd44</string>
 	<key>AuthURL</key>
-	<string>http://103.245.204.114:8081/authentication/api/v1/login_session</string>
+	<string>/authentication/api/v1/login_session</string>
 </dict>
 </plist>

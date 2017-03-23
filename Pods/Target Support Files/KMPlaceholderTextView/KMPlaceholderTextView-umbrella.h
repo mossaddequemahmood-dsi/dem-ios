@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double DropDownVersionNumber;
-FOUNDATION_EXPORT const unsigned char DropDownVersionString[];
+FOUNDATION_EXPORT double KMPlaceholderTextViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char KMPlaceholderTextViewVersionString[];
 

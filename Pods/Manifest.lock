@@ -1,15 +1,15 @@
 PODS:
   - Alamofire (4.3.0)
-  - DropDown (2)
+  - KMPlaceholderTextView (1.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
-  - DropDown (~> 2)
+  - KMPlaceholderTextView (~> 1.3.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  KMPlaceholderTextView: 2bbcd19a273648a80a61e1e48f9743a24d8930e3
 
-PODFILE CHECKSUM: 6fc40de14ac3f0268460a897cf02a28281dd06b4
+PODFILE CHECKSUM: adf1eed164307e5cfae5015935fe44ed1a32cc36
 
 COCOAPODS: 1.2.1.beta.1

@@ -15,8 +15,8 @@ class DashboardViewController: UIViewController {
     
     
     @IBOutlet weak var leaveRequestBtn: UIButton!
-
-
+    @IBOutlet weak var btnReviewLeaveRequest: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,6 +24,7 @@ class DashboardViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden=true
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,9 +33,11 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func leaveRequest(_ sender: UIButton) {
-        
-        print("Hello!!!")
         performSegue(withIdentifier: "segueShowLeaveRequestForm", sender: self);
     }
 
+    @IBAction func reviewLeaveRequest(_ sender: UIButton) {
+                performSegue(withIdentifier: "segueShowLeaveRequestReviewForm", sender: self);
+    }
+    
 }

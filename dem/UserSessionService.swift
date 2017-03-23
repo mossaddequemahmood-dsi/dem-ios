@@ -36,7 +36,9 @@ class UserSessionService {
         resetPreferences();
         
         let tetantId = Config.get(key: "AuthTenantID") ?? "";
-        let authUrl = Config.get(key: "AuthURL") ?? "";
+        
+        let baseUrl = Config.get(key: "BaseURL") ?? "";
+        let authUrl = baseUrl + Config.get(key: "AuthURL") ;
         
         Logger.debug(msg: "tetantID: \(tetantId)");
         Logger.debug(msg: "authUrl: \(authUrl)");
